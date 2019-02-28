@@ -31,9 +31,9 @@ Attentive pooling Networks解读
 
 > 这样问题向量中就会存在答案的信息，答案向量中就会存在问题的信息。然后再分别做softmax归一化之后再乘上开始问题和答案的向量表征，表示提取出看过问题和答案之后，问题和答案中的重要词语分别做的向量表征。
 
-![image](https://github.com/ShaoQiBNU/NLP_QA--Attentive-pooling-Networks/blob/master/image/5.png)
-
 > 模型采用问答三元组的形式进行建模（q，a+，a-），q代表问题，a+代表正向答案，a-代表负向答案，loss函数为hinge loss：
+
+![image](https://github.com/ShaoQiBNU/NLP_QA--Attentive-pooling-Networks/blob/master/image/5.png)
 
 # 三. 代码
 
