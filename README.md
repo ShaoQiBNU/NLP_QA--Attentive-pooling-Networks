@@ -11,7 +11,7 @@ Attentive pooling Networks解读
 
 > 之前的QA模型主要是两种：QA-CNN 和 QA-biLSTM，模型结构如下：
 
-img1
+![image](https://github.com/ShaoQiBNU/NLP_QA--Attentive-pooling-Networks/blob/master/image/1.png)
 
 > 给定一个(q,a)对，q代表question，a代表answer，分别对q和a做embedding，输入CNN或biLSTM中得到Q和A，然后做max-pooling得到向量表示 <a href="https://www.codecogs.com/eqnedit.php?latex=r_{q}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?r_{q}" title="r_{q}" /></a>和<a href="https://www.codecogs.com/eqnedit.php?latex=r_{a}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?r_{a}" title="r_{a}" /></a>，最后计算二者的余弦相似度。
 
@@ -19,19 +19,19 @@ img1
 
 > AP模型结构如图所示
 
-Img2
+![image](https://github.com/ShaoQiBNU/NLP_QA--Attentive-pooling-Networks/blob/master/image/2.png)
 
 > 借鉴了attention机制的思想，在QA模型基础上构造了Attentive Pooling层G，
 
-Img3
+![image](https://github.com/ShaoQiBNU/NLP_QA--Attentive-pooling-Networks/blob/master/image/3.png)
 
 > 其中Q是问题的向量表征，A是答案的向量表征，U是参数矩阵，可以通过神经网络学习得到的。然后分别做基于行的max-pooling和基于列的max-pooling，得到Attention层中重要的信息。
 
-Img4
+![image](https://github.com/ShaoQiBNU/NLP_QA--Attentive-pooling-Networks/blob/master/image/4.png)
 
 > 这样问题向量中就会存在答案的信息，答案向量中就会存在问题的信息。然后再分别做softmax归一化之后再乘上开始问题和答案的向量表征，表示提取出看过问题和答案之后，问题和答案中的重要词语分别做的向量表征。
 
-Img5
+![image](https://github.com/ShaoQiBNU/NLP_QA--Attentive-pooling-Networks/blob/master/image/5.png)
 
 > 模型采用问答三元组的形式进行建模（q，a+，a-），q代表问题，a+代表正向答案，a-代表负向答案，loss函数为hinge loss：
 
