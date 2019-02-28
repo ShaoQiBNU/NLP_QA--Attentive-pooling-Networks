@@ -37,7 +37,7 @@ Attentive pooling Networks解读
 
 # 三. 代码
 
-> 采用的数据为WikiQA数据集，代码来源https://github.com/Lapis-Hong/Attentive-Pooling-Networks，对其进行了修改和注释。
+> 采用的数据为WikiQA数据集，代码来源https://github.com/Lapis-Hong/Attentive-Pooling-Networks. ，对其进行了修改和注释。
 
 ## (一) 数据集生成
 
