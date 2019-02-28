@@ -128,10 +128,10 @@ if __name__ == '__main__':
 
 > 在 config.py 里可以修改相关配置，然后 python train.py 即可开始训练模型，训练过程如下：
 
-![image](https://github.com/ShaoQiBNU/NLP_QA--Attentive-pooling-Networks/blob/master/image/5.png)
+![image](https://github.com/ShaoQiBNU/NLP_QA--Attentive-pooling-Networks/blob/master/image/6.png)
 
 ## (三) 预测结果
 
 > python pred.py 可以查看测试集上预测score与真实score的余弦相似度，结果如下：
 
-![image](https://github.com/ShaoQiBNU/NLP_QA--Attentive-pooling-Networks/blob/master/image/5.png)
+![image](https://github.com/ShaoQiBNU/NLP_QA--Attentive-pooling-Networks/blob/master/image/7.png)
